@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/promedio sueldos.iml" filepath="$PROJECT_DIR$/promedio sueldos.iml" />
+      <module fileurl="file://$PROJECT_DIR$/.idea/estructura-de-datos.iml" filepath="$PROJECT_DIR$/.idea/estructura-de-datos.iml" />
     </modules>
   </component>
 </project>
