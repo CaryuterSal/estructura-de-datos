@@ -2,8 +2,9 @@ package fibonacci;
 
 public class Main {
     public static void main(String[] args) {
-        System.out.println(fibonacci(5));
-        System.out.println(fibonacci(7));
+        for (int i = 0; i < Integer.parseInt(args[0]); i++) {
+            System.out.printf("#%d: %d%n", i + 1, fibonacci(i));
+        }
     }
 
     static int fibonacci(int n) {
