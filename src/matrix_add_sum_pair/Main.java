@@ -17,11 +17,9 @@ public class Main {
 
         for (int i = 0; i < arrTest.length; i++) {
             int rowLength = arrTest[i].length;
-            arrTest[i] = copyArr(arrTest[i], arrTest[i].length + 1);
+            arrTest[i] = copyArr(arrTest[i], arrTest[i].length + 1, 0);
             if(rowLength % 2 == 0){
                 arrTest[i][rowLength] = arrTest[i][0] + arrTest[i][rowLength - 1];
-            } else {
-                arrTest[i][rowLength] = 0;
             }
         }
 
@@ -30,10 +28,10 @@ public class Main {
     }
 
 
-    private static int[] copyArr(int[] arrTest, int length) {
+    private static int[] copyArr(int[] arrTest, int length, int fill) {
         int[] arrCopy = new int[length];
         for (int i = 0; i < arrCopy.length; i++) {
-            arrCopy[i] = i < arrTest.length ? arrTest[i] : 0;
+            arrCopy[i] = i < arrTest.length ? arrTest[i] : fill;
         }
         return arrCopy;
     }
