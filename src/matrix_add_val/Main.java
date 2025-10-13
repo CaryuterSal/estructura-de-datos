@@ -21,9 +21,17 @@ public class Main {
 
     static void appendNextNumToArrRows(int[][] arrTest){
         for(int i=0;i<arrTest.length;i++){
-            arrTest[i] = Arrays.copyOf(arrTest[i], arrTest[i].length+1);
+            arrTest[i] = copyArray(arrTest[i], arrTest[i].length+1);
             arrTest[i][arrTest[i].length - 1] = arrTest[i][arrTest[i].length - 2] + 1;
         }
+    }
+
+    static int[] copyArray(int[] arr, int length){
+        int[] newArr = new int[length];
+        for(int i=0;i<arr.length;i++){
+            newArr[i] = arr[i];
+        }
+        return newArr;
     }
 
     static void printArr(int[][] arr){
