@@ -19,7 +19,7 @@ public class ArrayStack<T> implements IStack<T> {
     @Override
     public void push(T element) {
         //Vamos a asegurar que aún tenga espacio el array
-        data[top++] = (T) element;
+        data[top++] = element;
     }
 
     @SuppressWarnings("unchecked")
@@ -46,8 +46,11 @@ public class ArrayStack<T> implements IStack<T> {
 
     @Override
     public void clear() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'clear'");
+        //Recorre el arreglo al revés, es decir, desde la punta
+        for (int i = top-1; i >= 0; i--) {
+            data[i] = null;
+        }
+        top = 0;
     }
 
     @Override

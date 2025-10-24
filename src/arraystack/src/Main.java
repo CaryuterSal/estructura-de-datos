@@ -10,5 +10,10 @@ public class Main {
         stack1.pop();
         stack1.print();
 
+        stack1.push('D');
+        stack1.push('E');
+        stack1.print();
+        stack1.clear();
+        stack1.print();
     }
 }
