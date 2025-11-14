@@ -12,8 +12,8 @@ public class QuickSort {
     }
 
     private static <T extends Comparable<T>> int partition(T[] arr, int low, int high) {
-        T pivot = arr[high];
-        int i = low - 1;
+        T pivot = arr[high]; //tomamos pivote como el de hasta arriba *
+        int i = low - 1; // (índice de donde estan los menores al pivote) todos los elementos que no son pivote --------------*
 
         for (int j = low; j < high; j++) {
             if (arr[j].compareTo(pivot) <= 0) {
