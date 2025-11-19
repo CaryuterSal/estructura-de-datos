@@ -2,7 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/bubblesort-diff.iml" filepath="$PROJECT_DIR$/bubblesort-diff.iml" />
+      <module fileurl="file://$PROJECT_DIR$/selectionsort-split-odd-even.iml" filepath="$PROJECT_DIR$/selectionsort-split-odd-even.iml" />
     </modules>
   </component>
 </project>
